@@ -1,4 +1,4 @@
-## Phase 1: Backend Development (Week 8-10)
+## Phase 1: Backend Development
 
 ### FastAPI Application Setup
 - [x] Create FastAPI project structure
@@ -51,7 +51,7 @@
 - [ ] Implement rate limiting
 
 
-## Phase 6: Deployment (Week 13-14)
+## Phase 6: Deployment
 
 ### Performance Optimization
 - [ ] Optimize model inference speed
