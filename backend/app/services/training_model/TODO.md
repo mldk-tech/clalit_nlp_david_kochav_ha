@@ -3,7 +3,7 @@
 ## Project Overview
 Building a machine learning model that analyzes doctor appointment summaries to predict whether a patient's future outcome will be better or worse.
 
-## Phase 1: Data Preparation and Analysis (Week 1-2)
+## Phase 1: Data Preparation and Analysis
 
 ### Data Loading and Validation
 - [x] Load `doctor_appointment_summaries.json` dataset
@@ -47,7 +47,7 @@ Building a machine learning model that analyzes doctor appointment summaries to 
 - [x] Create train/test split (80/20)
 - [x] Implement cross-validation strategy
 
-## Phase 2: Feature Engineering (Week 3-4)
+## Phase 2: Feature Engineering
 
 ### NLP Preprocessing Pipeline
 - [x] Install and configure NLP libraries (spaCy, NLTK)
@@ -130,7 +130,7 @@ Building a machine learning model that analyzes doctor appointment summaries to 
 - [x] Implement feature selection methods
 - [x] Create feature importance analysis
 
-## Phase 3: Model Development (Week 5-7)
+## Phase 3: Model Development
 
 ### Baseline Models
 - [x] Implement Random Forest classifier
