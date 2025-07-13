@@ -1,0 +1,401 @@
+future_outcome,outcome_label
+Patient responded positively to treatment.,better
+Patient responded positively to treatment.,better
+"Condition remains unchanged, monitoring continues.",better
+Symptoms are persistent but manageable.,better
+Stable condition with signs of improvement.,better
+Condition has deteriorated since last visit.,worse
+"No further issues reported, patient doing well.",better
+Patient deceased following complications.,worse
+"Despite efforts, the patient passed away.",worse
+Patient is feeling much better and has resumed daily activities.,better
+Patient responded positively to treatment.,better
+Patient is in critical condition and under intensive care.,worse
+Patient is feeling much better and has resumed daily activities.,better
+Patient is feeling much better and has resumed daily activities.,better
+Symptoms are persistent but manageable.,better
+Patient is in critical condition and under intensive care.,worse
+Health has returned to baseline with no complications.,better
+Emergency intervention required due to severe decline.,worse
+Health has returned to baseline with no complications.,better
+Symptoms have subsided and recovery is complete.,better
+"No complaints at follow-up, patient in good health.",better
+Symptoms have subsided and recovery is complete.,better
+"Recovery is on track, no concerns noted.",better
+Symptoms worsened despite intervention.,worse
+Patient admitted for further evaluation due to worsening condition.,worse
+Condition has deteriorated since last visit.,worse
+No improvement noted; escalation of care necessary.,worse
+Condition has deteriorated since last visit.,worse
+Symptoms are persistent but manageable.,better
+Patient's state declined; alternative treatment considered.,worse
+Patient deceased following complications.,worse
+"Despite efforts, the patient passed away.",worse
+Patient's state declined; alternative treatment considered.,worse
+Health has returned to baseline with no complications.,better
+Patient is in critical condition and under intensive care.,worse
+Health has returned to baseline with no complications.,better
+Patient reports minor improvements but overall stable.,better
+"Condition remains unchanged, monitoring continues.",better
+"No further issues reported, patient doing well.",better
+"No complaints at follow-up, patient in good health.",better
+Symptoms have subsided and recovery is complete.,better
+Condition has deteriorated since last visit.,worse
+Symptoms have subsided and recovery is complete.,better
+"No complaints at follow-up, patient in good health.",better
+Symptoms have subsided and recovery is complete.,better
+Stable condition with signs of improvement.,better
+Patient is in critical condition and under intensive care.,worse
+Symptoms have subsided and recovery is complete.,better
+Patient reports minor improvements but overall stable.,better
+"No further issues reported, patient doing well.",better
+Stable condition with signs of improvement.,better
+"Despite efforts, the patient passed away.",worse
+No improvement noted; escalation of care necessary.,worse
+Condition has deteriorated since last visit.,worse
+Emergency intervention required due to severe decline.,worse
+Emergency intervention required due to severe decline.,worse
+"Recovery is on track, no concerns noted.",better
+Patient deceased following complications.,worse
+Patient's state declined; alternative treatment considered.,worse
+Health has returned to baseline with no complications.,better
+Condition has deteriorated since last visit.,worse
+"No complaints at follow-up, patient in good health.",better
+"Recovery is on track, no concerns noted.",better
+Patient is feeling much better and has resumed daily activities.,better
+Patient responded positively to treatment.,better
+Health has returned to baseline with no complications.,better
+Stable condition with signs of improvement.,better
+Symptoms are persistent but manageable.,better
+"No significant progress, further observation required.",better
+Emergency intervention required due to severe decline.,worse
+Patient responded positively to treatment.,better
+"No further issues reported, patient doing well.",better
+"Condition remains unchanged, monitoring continues.",better
+Patient deceased following complications.,worse
+Condition has deteriorated since last visit.,worse
+"No further issues reported, patient doing well.",better
+"No complaints at follow-up, patient in good health.",better
+"No complaints at follow-up, patient in good health.",better
+"Despite efforts, the patient passed away.",worse
+Symptoms worsened despite intervention.,worse
+"No further issues reported, patient doing well.",better
+No improvement noted; escalation of care necessary.,worse
+"Recovery is on track, no concerns noted.",better
+Stable condition with signs of improvement.,better
+Patient deceased following complications.,worse
+"No complaints at follow-up, patient in good health.",better
+Emergency intervention required due to severe decline.,worse
+"Despite efforts, the patient passed away.",worse
+Health continues to decline under current treatment.,worse
+Patient is feeling much better and has resumed daily activities.,better
+Emergency intervention required due to severe decline.,worse
+"Excellent recovery progress, no ongoing concerns.",better
+Patient reports minor improvements but overall stable.,better
+Patient admitted for further evaluation due to worsening condition.,worse
+Patient is feeling much better and has resumed daily activities.,better
+Patient admitted for further evaluation due to worsening condition.,worse
+Health has returned to baseline with no complications.,better
+"Recovery is on track, no concerns noted.",better
+Stable condition with signs of improvement.,better
+Patient is in critical condition and under intensive care.,worse
+"No complaints at follow-up, patient in good health.",better
+Patient's state declined; alternative treatment considered.,worse
+"Despite efforts, the patient passed away.",worse
+Health has returned to baseline with no complications.,better
+Patient admitted for further evaluation due to worsening condition.,worse
+Patient reports minor improvements but overall stable.,better
+"No significant progress, further observation required.",better
+Patient responded positively to treatment.,better
+No improvement noted; escalation of care necessary.,worse
+Patient is in critical condition and under intensive care.,worse
+Health has returned to baseline with no complications.,better
+Symptoms are persistent but manageable.,better
+No improvement noted; escalation of care necessary.,worse
+Symptoms have subsided and recovery is complete.,better
+Stable condition with signs of improvement.,better
+"Despite efforts, the patient passed away.",worse
+Stable condition with signs of improvement.,better
+"No further issues reported, patient doing well.",better
+Symptoms worsened despite intervention.,worse
+Patient reports minor improvements but overall stable.,better
+Stable condition with signs of improvement.,better
+Patient is feeling much better and has resumed daily activities.,better
+Symptoms worsened despite intervention.,worse
+Patient deceased following complications.,worse
+Symptoms have subsided and recovery is complete.,better
+"Condition remains unchanged, monitoring continues.",better
+Patient is feeling much better and has resumed daily activities.,better
+Patient is in critical condition and under intensive care.,worse
+"Excellent recovery progress, no ongoing concerns.",better
+No improvement noted; escalation of care necessary.,worse
+Emergency intervention required due to severe decline.,worse
+Patient reports minor improvements but overall stable.,better
+Health has returned to baseline with no complications.,better
+Patient responded positively to treatment.,better
+"No complaints at follow-up, patient in good health.",better
+Stable condition with signs of improvement.,better
+Patient's state declined; alternative treatment considered.,worse
+"Recovery is on track, no concerns noted.",better
+"Despite efforts, the patient passed away.",worse
+Stable condition with signs of improvement.,better
+Patient's state declined; alternative treatment considered.,worse
+"Despite efforts, the patient passed away.",worse
+Stable condition with signs of improvement.,better
+Symptoms have subsided and recovery is complete.,better
+Patient responded positively to treatment.,better
+"No significant progress, further observation required.",better
+"Recovery is on track, no concerns noted.",better
+"Despite efforts, the patient passed away.",worse
+Patient responded positively to treatment.,better
+Symptoms have subsided and recovery is complete.,better
+"No further issues reported, patient doing well.",better
+Emergency intervention required due to severe decline.,worse
+Symptoms worsened despite intervention.,worse
+Symptoms have subsided and recovery is complete.,better
+"No further issues reported, patient doing well.",better
+Patient deceased following complications.,worse
+"Condition remains unchanged, monitoring continues.",better
+Health continues to decline under current treatment.,worse
+Symptoms worsened despite intervention.,worse
+Patient responded positively to treatment.,better
+No improvement noted; escalation of care necessary.,worse
+Patient reports minor improvements but overall stable.,better
+No improvement noted; escalation of care necessary.,worse
+Symptoms are persistent but manageable.,better
+"Symptoms resolved, patient discharged in good condition.",better
+Patient's state declined; alternative treatment considered.,worse
+"No significant progress, further observation required.",better
+"No complaints at follow-up, patient in good health.",better
+Symptoms have subsided and recovery is complete.,better
+Emergency intervention required due to severe decline.,worse
+"No complaints at follow-up, patient in good health.",better
+Patient deceased following complications.,worse
+Symptoms have subsided and recovery is complete.,better
+"Despite efforts, the patient passed away.",worse
+Stable condition with signs of improvement.,better
+Patient deceased following complications.,worse
+"No significant progress, further observation required.",better
+"No complaints at follow-up, patient in good health.",better
+"Despite efforts, the patient passed away.",worse
+"Recovery is on track, no concerns noted.",better
+No improvement noted; escalation of care necessary.,worse
+"Symptoms resolved, patient discharged in good condition.",better
+Symptoms are persistent but manageable.,better
+Health has returned to baseline with no complications.,better
+Condition has deteriorated since last visit.,worse
+Patient's state declined; alternative treatment considered.,worse
+"No complaints at follow-up, patient in good health.",better
+Patient admitted for further evaluation due to worsening condition.,worse
+Condition has deteriorated since last visit.,worse
+No improvement noted; escalation of care necessary.,worse
+Symptoms have subsided and recovery is complete.,better
+Health has returned to baseline with no complications.,better
+Patient responded positively to treatment.,better
+"Despite efforts, the patient passed away.",worse
+No improvement noted; escalation of care necessary.,worse
+"No complaints at follow-up, patient in good health.",better
+Stable condition with signs of improvement.,better
+Patient reports minor improvements but overall stable.,better
+Condition has deteriorated since last visit.,worse
+Symptoms have subsided and recovery is complete.,better
+"Recovery is on track, no concerns noted.",better
+Patient responded positively to treatment.,better
+Patient is in critical condition and under intensive care.,worse
+Patient deceased following complications.,worse
+Symptoms worsened despite intervention.,worse
+No improvement noted; escalation of care necessary.,worse
+"Recovery is on track, no concerns noted.",better
+"No further issues reported, patient doing well.",better
+"Recovery is on track, no concerns noted.",better
+"Condition remains unchanged, monitoring continues.",better
+Emergency intervention required due to severe decline.,worse
+Patient reports minor improvements but overall stable.,better
+"No complaints at follow-up, patient in good health.",better
+Condition has deteriorated since last visit.,worse
+Patient reports minor improvements but overall stable.,better
+Stable condition with signs of improvement.,better
+Patient is in critical condition and under intensive care.,worse
+Patient admitted for further evaluation due to worsening condition.,worse
+"Condition remains unchanged, monitoring continues.",better
+"Despite efforts, the patient passed away.",worse
+"Despite efforts, the patient passed away.",worse
+"Condition remains unchanged, monitoring continues.",better
+Health has returned to baseline with no complications.,better
+"Recovery is on track, no concerns noted.",better
+"Condition remains unchanged, monitoring continues.",better
+Stable condition with signs of improvement.,better
+Symptoms worsened despite intervention.,worse
+Patient is in critical condition and under intensive care.,worse
+Patient reports minor improvements but overall stable.,better
+Patient's state declined; alternative treatment considered.,worse
+Condition has deteriorated since last visit.,worse
+"Condition remains unchanged, monitoring continues.",better
+Emergency intervention required due to severe decline.,worse
+"Condition remains unchanged, monitoring continues.",better
+Condition has deteriorated since last visit.,worse
+Emergency intervention required due to severe decline.,worse
+"Recovery is on track, no concerns noted.",better
+Patient admitted for further evaluation due to worsening condition.,worse
+"No significant progress, further observation required.",better
+Patient is feeling much better and has resumed daily activities.,better
+Stable condition with signs of improvement.,better
+"Symptoms resolved, patient discharged in good condition.",better
+Emergency intervention required due to severe decline.,worse
+Patient's state declined; alternative treatment considered.,worse
+"Despite efforts, the patient passed away.",worse
+Stable condition with signs of improvement.,better
+Patient responded positively to treatment.,better
+"Condition remains unchanged, monitoring continues.",better
+Patient is in critical condition and under intensive care.,worse
+Health has returned to baseline with no complications.,better
+No improvement noted; escalation of care necessary.,worse
+Patient is feeling much better and has resumed daily activities.,better
+"No significant progress, further observation required.",better
+Health has returned to baseline with no complications.,better
+"No complaints at follow-up, patient in good health.",better
+"Condition remains unchanged, monitoring continues.",better
+Patient admitted for further evaluation due to worsening condition.,worse
+No improvement noted; escalation of care necessary.,worse
+"No further issues reported, patient doing well.",better
+No improvement noted; escalation of care necessary.,worse
+No improvement noted; escalation of care necessary.,worse
+Patient admitted for further evaluation due to worsening condition.,worse
+"Recovery is on track, no concerns noted.",better
+"Recovery is on track, no concerns noted.",better
+Patient admitted for further evaluation due to worsening condition.,worse
+No improvement noted; escalation of care necessary.,worse
+Stable condition with signs of improvement.,better
+Patient deceased following complications.,worse
+Patient is in critical condition and under intensive care.,worse
+"Recovery is on track, no concerns noted.",better
+"No significant progress, further observation required.",better
+Patient reports minor improvements but overall stable.,better
+Symptoms have subsided and recovery is complete.,better
+Emergency intervention required due to severe decline.,worse
+Health continues to decline under current treatment.,worse
+"Excellent recovery progress, no ongoing concerns.",better
+Symptoms worsened despite intervention.,worse
+Symptoms are persistent but manageable.,better
+"Despite efforts, the patient passed away.",worse
+"Condition remains unchanged, monitoring continues.",better
+Patient is feeling much better and has resumed daily activities.,better
+Patient admitted for further evaluation due to worsening condition.,worse
+"Recovery is on track, no concerns noted.",better
+"No complaints at follow-up, patient in good health.",better
+"Despite efforts, the patient passed away.",worse
+Patient admitted for further evaluation due to worsening condition.,worse
+"Condition remains unchanged, monitoring continues.",better
+Patient deceased following complications.,worse
+Health has returned to baseline with no complications.,better
+"Condition remains unchanged, monitoring continues.",better
+Symptoms worsened despite intervention.,worse
+Symptoms worsened despite intervention.,worse
+Patient responded positively to treatment.,better
+Emergency intervention required due to severe decline.,worse
+Symptoms worsened despite intervention.,worse
+"No significant progress, further observation required.",better
+Patient is feeling much better and has resumed daily activities.,better
+No improvement noted; escalation of care necessary.,worse
+Patient deceased following complications.,worse
+Patient is in critical condition and under intensive care.,worse
+Patient admitted for further evaluation due to worsening condition.,worse
+Emergency intervention required due to severe decline.,worse
+"No complaints at follow-up, patient in good health.",better
+Patient admitted for further evaluation due to worsening condition.,worse
+"Excellent recovery progress, no ongoing concerns.",better
+Stable condition with signs of improvement.,better
+"No significant progress, further observation required.",better
+Patient responded positively to treatment.,better
+No improvement noted; escalation of care necessary.,worse
+Health has returned to baseline with no complications.,better
+"Symptoms resolved, patient discharged in good condition.",better
+"No significant progress, further observation required.",better
+Patient reports minor improvements but overall stable.,better
+"Despite efforts, the patient passed away.",worse
+Patient deceased following complications.,worse
+Stable condition with signs of improvement.,better
+Stable condition with signs of improvement.,better
+No improvement noted; escalation of care necessary.,worse
+"No complaints at follow-up, patient in good health.",better
+"Condition remains unchanged, monitoring continues.",better
+Patient reports minor improvements but overall stable.,better
+Symptoms have subsided and recovery is complete.,better
+Stable condition with signs of improvement.,better
+Symptoms worsened despite intervention.,worse
+Symptoms are persistent but manageable.,better
+Patient's state declined; alternative treatment considered.,worse
+Patient is in critical condition and under intensive care.,worse
+"Despite efforts, the patient passed away.",worse
+Health has returned to baseline with no complications.,better
+"Recovery is on track, no concerns noted.",better
+Patient admitted for further evaluation due to worsening condition.,worse
+"Despite efforts, the patient passed away.",worse
+"No further issues reported, patient doing well.",better
+Health has returned to baseline with no complications.,better
+Patient admitted for further evaluation due to worsening condition.,worse
+"No complaints at follow-up, patient in good health.",better
+No improvement noted; escalation of care necessary.,worse
+Symptoms are persistent but manageable.,better
+Health has returned to baseline with no complications.,better
+"No further issues reported, patient doing well.",better
+Patient's state declined; alternative treatment considered.,worse
+Patient reports minor improvements but overall stable.,better
+Symptoms worsened despite intervention.,worse
+Patient reports minor improvements but overall stable.,better
+Patient's state declined; alternative treatment considered.,worse
+"Despite efforts, the patient passed away.",worse
+"No complaints at follow-up, patient in good health.",better
+No improvement noted; escalation of care necessary.,worse
+Symptoms worsened despite intervention.,worse
+Health has returned to baseline with no complications.,better
+"No further issues reported, patient doing well.",better
+"Excellent recovery progress, no ongoing concerns.",better
+"No significant progress, further observation required.",better
+"Recovery is on track, no concerns noted.",better
+Symptoms worsened despite intervention.,worse
+"No complaints at follow-up, patient in good health.",better
+"No significant progress, further observation required.",better
+Condition has deteriorated since last visit.,worse
+Symptoms are persistent but manageable.,better
+Patient's state declined; alternative treatment considered.,worse
+No improvement noted; escalation of care necessary.,worse
+Symptoms have subsided and recovery is complete.,better
+Patient is in critical condition and under intensive care.,worse
+"No complaints at follow-up, patient in good health.",better
+"Despite efforts, the patient passed away.",worse
+"Despite efforts, the patient passed away.",worse
+Symptoms have subsided and recovery is complete.,better
+Patient deceased following complications.,worse
+"Despite efforts, the patient passed away.",worse
+Patient is feeling much better and has resumed daily activities.,better
+"Condition remains unchanged, monitoring continues.",better
+Patient's state declined; alternative treatment considered.,worse
+Symptoms are persistent but manageable.,better
+No improvement noted; escalation of care necessary.,worse
+Patient's state declined; alternative treatment considered.,worse
+Symptoms worsened despite intervention.,worse
+Patient responded positively to treatment.,better
+No improvement noted; escalation of care necessary.,worse
+"No further issues reported, patient doing well.",better
+Emergency intervention required due to severe decline.,worse
+Emergency intervention required due to severe decline.,worse
+Health has returned to baseline with no complications.,better
+Patient is feeling much better and has resumed daily activities.,better
+Symptoms are persistent but manageable.,better
+Patient deceased following complications.,worse
+"Condition remains unchanged, monitoring continues.",better
+Patient deceased following complications.,worse
+"Condition remains unchanged, monitoring continues.",better
+"No further issues reported, patient doing well.",better
+Symptoms worsened despite intervention.,worse
+Health has returned to baseline with no complications.,better
+Patient deceased following complications.,worse
+No improvement noted; escalation of care necessary.,worse
+Health has returned to baseline with no complications.,better
+Patient deceased following complications.,worse
+Patient reports minor improvements but overall stable.,better
+Patient deceased following complications.,worse
+"Excellent recovery progress, no ongoing concerns.",better
+Patient admitted for further evaluation due to worsening condition.,worse
+"Despite efforts, the patient passed away.",worse

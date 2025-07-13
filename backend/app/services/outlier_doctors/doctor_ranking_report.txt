@@ -1,0 +1,33 @@
+================================================================================
+DOCTOR PERFORMANCE RANKING REPORT
+================================================================================
+
+OVERALL STATISTICS:
+Total doctors analyzed: 10
+Total cases analyzed: 400
+Average cases per doctor: 40.0
+Average weighted score: 10.287
+
+DOCTOR RANKINGS (by weighted score):
+--------------------------------------------------------------------------------
+Rank Doctor ID  Cases  Avg Score  Weighted Score  Outlier 
+--------------------------------------------------------------------------------
+1    dr_03      41     4.244      15.862          (good)  
+2    dr_05      50     3.080      12.110                  
+3    dr_06      42     3.024      11.373                  
+4    dr_01      39     2.821      10.405                  
+5    dr_04      39     2.718      10.026                  
+6    dr_09      42     2.619      9.851                   
+7    dr_02      31     2.742      9.503                   
+8    dr_08      39     2.564      9.459                   
+9    dr_10      43     2.419      9.152                   
+10   dr_07      34     1.441      5.124           (bad)   
+
+OUTLIER DOCTORS DETECTED:
+----------------------------------------
+EXCEPTIONAL PERFORMERS:
+  dr_03: Weighted score 15.862 (Rank 1, 41 cases)
+UNDERPERFORMING DOCTORS:
+  dr_07: Weighted score 5.124 (Rank 10, 34 cases)
+
+================================================================================

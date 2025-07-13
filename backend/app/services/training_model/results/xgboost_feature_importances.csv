@@ -1,0 +1,11 @@
+Feature,Importance
+outcome_encoded,0.9053
+tfidf_dizziness,0.0167
+tfidf_hydration,0.0127
+tfidf_lisinopril,0.0117
+tfidf_neurology,0.0117
+has_eczema,0.0105
+tfidf_xray,0.0103
+tfidf_increase,0.0102
+has_hypertension,0.0060
+has_dizziness,0.0048

@@ -1,0 +1,2 @@
+Generic single-database configuration.
+uvicorn backend.app.main:app --reload

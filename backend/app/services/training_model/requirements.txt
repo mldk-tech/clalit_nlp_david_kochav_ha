@@ -1,0 +1,39 @@
+# Core data science libraries
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+
+# NLP libraries
+spacy
+nltk
+transformers
+
+# Machine learning libraries
+xgboost
+tensorflow
+torch
+
+# Web framework
+fastapi
+uvicorn
+
+# Database
+sqlalchemy
+alembic
+psycopg2-binary
+
+# Utilities
+python-multipart>=0.0.5
+pydantic
+python-dotenv
+
+# Testing
+pytest
+pytest-asyncio
+
+# Development
+black
+flake8
+mypy
