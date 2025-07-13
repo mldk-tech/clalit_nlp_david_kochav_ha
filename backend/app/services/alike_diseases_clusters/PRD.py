@@ -83,7 +83,7 @@ d) Anatomical clustering
 
 5.1 Technology Stack
 --------------------
-- Python 3.8+
+- Python 3.12+
 - Natural Language Processing: spaCy, NLTK
 - Clustering: scikit-learn, scipy
 - Data Processing: pandas, numpy
