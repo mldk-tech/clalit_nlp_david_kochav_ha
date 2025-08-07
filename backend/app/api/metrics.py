@@ -70,18 +70,39 @@ async def get_performance_metrics(
 @router.get("/metrics/system", response_model=SystemMetrics)
 async def get_system_metrics():
     """
-    Get system-wide performance metrics
+    Get system-wide performance metrics (real data)
     """
     try:
-        # TODO: Implement actual system metrics calculation
+        db = next(get_db())
+        # Total predictions
+        from backend.app.models.prediction import Prediction
+        from backend.app.models.model_version import ModelVersion
+        total_predictions = db.query(Prediction).count()
+        # Active models
+        active_models = db.query(ModelVersion).count()
+        # Last updated: latest prediction or model version
+        last_pred = db.query(Prediction).order_by(Prediction.created_at.desc()).first()
+        last_model = db.query(ModelVersion).order_by(ModelVersion.created_at.desc()).first()
+        last_pred_time = last_pred.created_at if last_pred else None
+        last_model_time = last_model.created_at if last_model else None
+        if last_pred_time and last_model_time:
+            last_updated = max(last_pred_time, last_model_time).isoformat()
+        elif last_pred_time:
+            last_updated = last_pred_time.isoformat()
+        elif last_model_time:
+            last_updated = last_model_time.isoformat()
+        else:
+            last_updated = datetime.now().isoformat()
+        # Average response time and error rate (not tracked, return 0.0 for now)
+        average_response_time = 0.0
+        error_rate = 0.0
         return SystemMetrics(
-            total_predictions=1250,
-            average_response_time=0.85,
-            error_rate=0.02,
-            active_models=2,
-            last_updated=datetime.now().isoformat()
+            total_predictions=total_predictions,
+            average_response_time=average_response_time,
+            error_rate=error_rate,
+            active_models=active_models,
+            last_updated=last_updated
         )
-        
     except Exception as e:
         logger.error(f"Error retrieving system metrics: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Failed to retrieve system metrics: {str(e)}")
