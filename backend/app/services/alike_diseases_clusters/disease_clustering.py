@@ -342,6 +342,7 @@ class DiseaseClusteringEngine:
                             outcomes.append(outcome)
             severity_score = self._outcome_severity_score(future_outcome)
             complexity_score = self._treatment_complexity({'dummy': treatments}) if isinstance(treatments, list) else 0
+            print(f"Extracted features from record {record.get('id', None)}")
             return {
                 'id': record.get('id', None),
                 'doctor_id': record.get('doctor_id', None),

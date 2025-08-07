@@ -3,4 +3,10 @@ uvicorn[standard]
 python-dotenv
 loguru 
 alembic
-psycopg2-binary 
+psycopg2-binary
+psutil
+scikit-learn
+pandas
+numpy
+joblib
+gensim 
