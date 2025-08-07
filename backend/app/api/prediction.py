@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel
 from typing import Optional, Dict, Any, List
 import logging
@@ -33,6 +33,10 @@ class PredictionResponse(BaseModel):
     word_count: int
     feature_importance: Dict[str, float]
     timestamp: str
+    
+    class Config:
+        # Allow arbitrary types for Dict[str, Any] fields
+        arbitrary_types_allowed = True
 
 class ModelInfo(BaseModel):
     id: str
@@ -45,7 +49,7 @@ class ModelInfo(BaseModel):
     feature_count: int
 
 @router.post("/predict", response_model=PredictionResponse)
-async def predict_outcome(request: PredictionRequest, db: Session = get_db()):
+async def predict_outcome(request: PredictionRequest, db: Session = Depends(get_db)):
     """
     Predict patient outcome based on appointment summary
     """
@@ -77,11 +81,22 @@ async def predict_outcome(request: PredictionRequest, db: Session = get_db()):
             feature_importance = result["feature_importance"]
         
         # Create prediction response
+        # Ensure features_used is serializable
+        features_used = result.get("features_used", {})
+        if isinstance(features_used, dict):
+            serializable_features = {}
+            for key, value in features_used.items():
+                if isinstance(value, (int, float, str, bool)):
+                    serializable_features[key] = value
+                else:
+                    serializable_features[key] = str(value)
+            features_used = serializable_features
+        
         prediction_response = PredictionResponse(
             prediction=prediction,
             confidence=confidence,
             model_version=request.model_version,
-            features_used=result.get("features_used", {}),
+            features_used=features_used,
             probabilities=probabilities,
             model_name=model_name,
             text_length=result.get("text_length", len(request.summary)),
@@ -92,6 +107,18 @@ async def predict_outcome(request: PredictionRequest, db: Session = get_db()):
         
         # Save prediction to database
         try:
+            # Convert features_used to a serializable format
+            features_used = result.get("features_used", {})
+            if isinstance(features_used, dict):
+                # Convert any non-serializable values to strings
+                serializable_features = {}
+                for key, value in features_used.items():
+                    if isinstance(value, (int, float, str, bool)):
+                        serializable_features[key] = value
+                    else:
+                        serializable_features[key] = str(value)
+                features_used = serializable_features
+            
             db_prediction = Prediction(
                 id=uuid.uuid4(),
                 doctor_id=request.doctor_id,
@@ -100,7 +127,7 @@ async def predict_outcome(request: PredictionRequest, db: Session = get_db()):
                 confidence_score=confidence,
                 model_version=request.model_version,
                 model_name=model_name,
-                features_used=result.get("features_used", {}),
+                features_used=features_used,
                 created_at=datetime.now()
             )
             db.add(db_prediction)
@@ -121,7 +148,7 @@ async def predict_outcome(request: PredictionRequest, db: Session = get_db()):
         raise HTTPException(status_code=500, detail=f"Prediction failed: {str(e)}")
 
 @router.get("/models", response_model=List[ModelInfo])
-async def list_models(db: Session = get_db()):
+async def list_models(db: Session = Depends(get_db)):
     """
     List available prediction models with their metadata (from database)
     """
@@ -191,7 +218,7 @@ async def get_model_health(model_name: str):
 async def get_prediction_history(
     doctor_id: Optional[str] = None,
     limit: int = 10,
-    db: Session = get_db()
+    db: Session = Depends(get_db)
 ):
     """
     Get prediction history
