@@ -123,35 +123,35 @@ async def predict_outcome(request: PredictionRequest, db: Session = get_db()):
 @router.get("/models", response_model=List[ModelInfo])
 async def list_models(db: Session = get_db()):
     """
-    List available prediction models with their metadata
+    List available prediction models with their metadata (from database)
     """
     try:
-        # Get models from prediction service
-        available_models = prediction_service.get_available_models()
-        
+        # Query all model versions from the database
+        model_versions = db.query(ModelVersion).order_by(ModelVersion.created_at.desc()).all()
+
         # Get model metrics from database
         from backend.app.services.model_metrics_service import ModelMetricsService
         metrics_service = ModelMetricsService(db)
-        
+
         models_info = []
-        for model in available_models:
+        for model in model_versions:
             # Get latest metrics for this model
-            metrics = metrics_service.get_latest_model_metrics(model["name"])
-            
+            metrics = metrics_service.get_latest_model_metrics(str(model.id))
+            accuracy = metrics.get("accuracy", 0.0) if metrics else 0.0
+            last_updated = model.created_at.isoformat() if model.created_at else None
             model_info = ModelInfo(
-                id=model["name"],
-                name=f"{model['type']} Model {model['name']}",
-                version="1.0.0",
-                model_type=model["type"],
-                accuracy=metrics.get("accuracy", 0.0) if metrics else 0.0,
-                last_updated=datetime.now().isoformat(),
-                status="active" if model["available"] else "inactive",
-                feature_count=model.get("feature_count", 0)
+                id=str(model.id),
+                name=model.description or f"Model {model.version}",
+                version=model.version,
+                model_type="unknown",  # Could be extended if you add a type field
+                accuracy=accuracy,
+                last_updated=last_updated,
+                status="active",  # Could be extended if you add a status field
+                feature_count=0  # Could be extended if you track features
             )
             models_info.append(model_info)
-        
+
         return models_info
-        
     except Exception as e:
         logger.error(f"Error listing models: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Failed to list models: {str(e)}")
