@@ -1,0 +1,27 @@
+Read file: algo.txt
+Here's the English translation of the algo.txt content:
+
+## Algorithms
+- **Random Forest** – Classification algorithm that builds a random forest model with GridSearchCV and parameters such as number of trees and depth
+- **XGBoost** – Boosting algorithm that emphasizes errors, also trained with GridSearchCV on a parameter grid
+- **K-Means** – Numerical clustering algorithm for examining similarity in meeting summaries
+- **Agglomerative Clustering** – Hierarchical clustering that merges samples gradually
+- **DBSCAN** – Density-based clustering for identifying complex structures
+- **Fuzzy C-Means (cmeans)** – Fuzzy clustering algorithm that divides points by partial membership
+- **PCA** – Principal Component Analysis for dimensionality reduction before clustering
+- **GridSearchCV and K-Fold Cross-Validation** – For parameter grid search and data splitting into groups for training
+- **Weighted Score Ranking** – Doctor ranking method that calculates average and weighted score (average × log(number of cases + 1)) and ranks doctors in order
+- **IQR Outlier Detection** – Identifies outlier doctors based on quartiles (Interquartile Range)
+- **OutcomeScorer** – Maps textual outcomes to categories excellent/good/neutral/poor/critical and gives them scores 1-5
+
+## Metrics (Indicators) in the Code
+- **Accuracy, Precision, Recall, F1-Score, ROC-AUC** – Accuracy metrics used for model evaluation in the training module and API
+- **Confusion Matrix and classification_report** – For displaying classification results
+- **Silhouette Score, Calinski-Harabasz Score, Davies-Bouldin Score** – Clustering quality metrics for comparing results of K-Means, Agglomerative and DBSCAN
+- **Adjusted Rand Index (ARI) and Normalized Mutual Information (NMI)** – Similarity metrics between different clusters (appear in the advanced clustering engine)
+- **Weighted Score, Average Score** – Performance metrics for doctors (calculate average and weighted scores)
+- **IQR** – Used for measuring quartiles in outlier detection
+- **System Metrics** – Total number of predictions, average response time, error rate and number of active models
+- **Model Performance Metrics** – Object with model_id, accuracy, precision, recall, f1_score, auc_roc, timestamp and data_version returned from API
+- **Doctor Analytics Metrics** – Include total_doctors, outlier_doctors, average_weighted_score and more
+- **Clustering Metrics** – Count total_clusters, cluster_sizes and silhouette_score
